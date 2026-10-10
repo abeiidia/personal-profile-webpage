@@ -1,6 +1,7 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,9 +22,12 @@
 
         <!-- WEBSITE BANNER -->
         <header class="top-banner">
-            <img src="images/bannerpicture.png" alt="Colorful polka dot banner">
+            <img src="images/bannerpicture.png"
+                 alt="Colorful polka dot banner">
+
             <h1>INSIDE OUT NA AQ</h1>
         </header>
+
 
         <!-- NAVIGATION BAR -->
         <nav class="navbar">
@@ -36,7 +40,9 @@
                 <a href="#contact">CONTACT</a>
             </div>
 
+            <!-- SEARCH BOX -->
             <form class="search-box" id="searchForm" role="search">
+
                 <input
                     type="search"
                     id="memberSearch"
@@ -44,117 +50,234 @@
                     aria-label="Search members"
                 >
 
-                <button type="submit" aria-label="Search">🔍</button>
+                <button type="submit" aria-label="Search">
+                    🔍
+                </button>
+
             </form>
 
         </nav>
 
-        <!-- MEMBERS SECTION -->
-        <h2 id="members" class="section-title">Meet Our Members!</h2>
 
-        <p class="intro">
-            Click an Inside Out character to get to know our members!
-        </p>
+        <!-- MEET OUR MEMBERS -->
+        <section class="members-section" id="members">
 
-        <!-- GROUP PICTURE -->
-        <div class="group-picture" id="profiles">
+            <h2 class="section-title">Meet Our Members!</h2>
 
-            <img
-                src="images/grouppic.png"
-                alt="Our five group members represented by Inside Out characters"
-                usemap="#groupmembers"
-                width="1472"
-                height="981"
-            >
+            <p class="intro">
+                Click an Inside Out character to get to know our members!
+            </p>
 
-        </div>
+            <!-- GROUP PICTURE -->
+            <div class="group-picture" id="profiles">
 
-        <!-- CLICKABLE CHARACTER AREAS -->
-        <map name="groupmembers">
+                <img
+                    src="images/grouppic.png"
+                    alt="Our five group members represented by Inside Out characters"
+                    usemap="#groupmembers"
+                    width="1472"
+                    height="981"
+                >
 
-            <area
-                shape="rect"
-                coords="365,210,590,540"
-                href="judiel.html"
-                alt="Judiel - Disgust"
-                title="Judiel"
-                data-member="judiel disgust"
-            >
+            </div>
 
-            <area
-                shape="rect"
-                coords="520,180,1170,560"
-                href="abi.html"
-                alt="Abi - Joy"
-                title="Abi"
-                data-member="abi joy"
-            >
 
-            <area
-                shape="rect"
-                coords="980,150,1230,580"
-                href="angel.html"
-                alt="Angel - Sadness"
-                title="Angel"
-                data-member="angel sadness"
-            >
+            <!-- CLICKABLE CHARACTER AREAS -->
+            <map name="groupmembers">
 
-            <area
-                shape="rect"
-                coords="480,575,705,890"
-                href="drew.html"
-                alt="Drew - Anxiety"
-                title="Drew"
-                data-member="drew anxiety"
-            >
+                <area
+                    shape="rect"
+                    coords="365,210,590,540"
+                    href="judiel.html"
+                    alt="Judiel - Disgust"
+                    title="Judiel"
+                    data-member="judiel disgust"
+                >
 
-            <area
-                shape="rect"
-                coords="840,555,1080,915"
-                href="christian.html"
-                alt="Christian - Embarrassment"
-                title="Christian"
-                data-member="christian embarrassment"
-            >
+                <area
+                    shape="rect"
+                    coords="520,180,1170,560"
+                    href="abi.html"
+                    alt="Abi - Joy"
+                    title="Abi"
+                    data-member="abi joy"
+                >
 
-        </map>
+                <area
+                    shape="rect"
+                    coords="980,150,1230,580"
+                    href="angel.html"
+                    alt="Angel - Sadness"
+                    title="Angel"
+                    data-member="angel sadness"
+                >
+
+                <area
+                    shape="rect"
+                    coords="480,575,705,890"
+                    href="drew.html"
+                    alt="Drew - Anxiety"
+                    title="Drew"
+                    data-member="drew anxiety"
+                >
+
+                <area
+                    shape="rect"
+                    coords="840,555,1080,915"
+                    href="christian.html"
+                    alt="Christian - Embarrassment"
+                    title="Christian"
+                    data-member="christian embarrassment"
+                >
+
+            </map>
+
+        </section>
+
 
         <!-- ABOUT OUR GROUP -->
         <section class="about-section" id="about">
 
             <h2 class="section-title">About Our Group</h2>
 
-            <p>
-                We are a group of students with different personalities,
-                interests, and talents. Like the emotions in Inside Out,
-                each of us brings something unique to our team!
+            <p class="about-intro">
+                We are second-year Diploma in Information Technology
+                (DIT) students from the Polytechnic University of the
+                Philippines - Sta. Mesa. Click the folder to learn more
+                about our group!
             </p>
+
+            <div class="folder-container">
+
+                <button
+                    class="folder-button"
+                    onclick="toggleFolder('aboutMessage', this)"
+                    aria-expanded="false"
+                    aria-controls="aboutMessage"
+                    type="button"
+                >
+
+                    <img
+                        src="images/aboutourgroupfolder.png"
+                        alt="About Our Group folder"
+                        class="folder-picture"
+                    >
+
+                    <span class="folder-label">
+                
+                    </span>
+
+                </button>
+
+
+                <!-- HIDDEN ABOUT MESSAGE -->
+                <div class="folder-message" id="aboutMessage" hidden>
+
+                    <h3>Who We Are</h3>
+
+                    <p>
+                        We are a group of second-year DIT students from
+                        PUP Sta. Mesa. As future IT professionals, we
+                        continue to learn and develop our skills in
+                        programming, technology, and problem-solving.
+                    </p>
+
+                    <p>
+                        Like the emotions in Inside Out, each member has
+                        a unique personality and different strengths.
+                        Despite our differences, we support one another,
+                        work together, and learn from each other's
+                        experiences.
+                    </p>
+
+                    <p>
+                        This website introduces our group, our
+                        personalities, and the things that make each
+                        of us unique. We hope you enjoy getting to know us!
+                    </p>
+
+                </div>
+
+            </div>
 
         </section>
 
-        <!-- GROUP INFORMATION -->
+
+        <!-- GET TO KNOW US -->
         <section class="group-info" id="contact">
 
             <h2 class="section-title">Get to Know Us!</h2>
 
-            <ul>
-                <li>Judiel - Disgust</li>
-                <li>Abi - Joy</li>
-                <li>Angel - Sadness</li>
-                <li>Drew - Anxiety</li>
-                <li>Christian - Embarrassment</li>
-            </ul>
+            <p class="about-intro">
+                Want to know more about our members?
+                Click the folder below!
+            </p>
+
+            <div class="folder-container">
+
+                <button
+                    class="folder-button"
+                    onclick="toggleFolder('membersMessage', this)"
+                    aria-expanded="false"
+                    aria-controls="membersMessage"
+                    type="button"
+                >
+
+                    <img
+                        src="images/gettoknowusfolder.png"
+                        alt="Meet Our Members folder"
+                        class="folder-picture"
+                    >
+
+                    <span class="folder-label">
+            
+                    </span>
+
+                </button>
+
+
+                <!-- HIDDEN MEMBERS MESSAGE -->
+                <div class="folder-message" id="membersMessage" hidden>
+
+                    <h3>Meet Our Team!</h3>
+
+                    <ul class="member-list">
+                        <li><strong>Judiel</strong> — Disgust</li>
+                        <li><strong>Abi</strong> — Joy</li>
+                        <li><strong>Angel</strong> — Sadness</li>
+                        <li><strong>Drew</strong> — Anxiety</li>
+                        <li><strong>Christian</strong> — Embarrassment</li>
+                    </ul>
+
+                    <p>
+                        Each member brings a different personality,
+                        perspective, and strength to our team. Click
+                        our characters in the group picture above to
+                        visit our individual profile pages!
+                    </p>
+
+                </div>
+
+            </div>
 
         </section>
 
+
+        <!-- FOOTER -->
         <footer class="site-footer">
-            <p>Made with love by our group 💗</p>
+
+            <p>Made with love by Group 7 💗</p>
+            <p>Different emotions, different personalities, one amazing team!</p>
+
         </footer>
 
     </div>
 
+
     <!-- JAVASCRIPT -->
     <script>
+
+        // RESIZE CLICKABLE CHARACTER AREAS
         const groupImage = document.querySelector(
             'img[usemap="#groupmembers"]'
         );
@@ -163,8 +286,9 @@
             'map[name="groupmembers"] area'
         );
 
-        // Keep character click areas aligned when the image resizes.
+
         function resizeImageMap() {
+
             if (!groupImage || !groupImage.naturalWidth) {
                 return;
             }
@@ -176,6 +300,7 @@
                 groupImage.clientHeight / groupImage.naturalHeight;
 
             memberAreas.forEach(area => {
+
                 if (!area.dataset.originalCoords) {
                     area.dataset.originalCoords =
                         area.getAttribute("coords");
@@ -188,16 +313,21 @@
 
                 const newCoords = originalCoords.map(
                     (coord, index) => {
+
                         return Math.round(
                             coord *
                             (index % 2 === 0 ? scaleX : scaleY)
                         );
+
                     }
                 );
 
                 area.setAttribute("coords", newCoords.join(","));
+
             });
+
         }
+
 
         if (groupImage.complete) {
             resizeImageMap();
@@ -207,15 +337,48 @@
 
         window.addEventListener("resize", resizeImageMap);
 
-        // Search for a member by name or Inside Out character.
+
+        // OPEN AND CLOSE FOLDERS
+        function toggleFolder(messageId, button) {
+
+            const message = document.getElementById(messageId);
+
+            const isOpen =
+                button.getAttribute("aria-expanded") === "true";
+
+            message.hidden = isOpen;
+
+            button.setAttribute(
+                "aria-expanded",
+                String(!isOpen)
+            );
+
+            const folderPicture =
+                button.querySelector(".folder-picture");
+
+            if (folderPicture) {
+
+                folderPicture.src = isOpen
+                    ? "images/aboutourgroupfolder.png"
+                    : "images/gettoknowusfolder.png";
+
+            }
+
+        }
+
+
+        // SEARCH MEMBERS BY NAME OR CHARACTER
         document.getElementById("searchForm").addEventListener(
             "submit",
             function(event) {
+
                 event.preventDefault();
 
                 const query = document
                     .getElementById("memberSearch")
-                    .value.trim().toLowerCase();
+                    .value
+                    .trim()
+                    .toLowerCase();
 
                 if (!query) {
                     document.getElementById("memberSearch").focus();
@@ -227,17 +390,23 @@
                 );
 
                 if (matchingMember) {
+
                     window.location.href = matchingMember.href;
+
                 } else {
+
                     alert(
                         "Sorry, no matching member found. " +
-                        "Try Judiel, Abi, Angel, Drew, Christian, " +
-                        "Joy, Disgust, Sadness, Anxiety, or Embarrassment."
+                        "Try Judiel, Abi, Angel, Drew, or Christian."
                     );
+
                 }
+
             }
         );
+
     </script>
 
 </body>
+
 </html>
