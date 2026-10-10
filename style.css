@@ -644,7 +644,7 @@ body:has(.profile) main > a:hover {
 }
 
 christian's page
-
+.christian-page {
 body:has(.profile) {
     margin: 0;
     padding: 0;
