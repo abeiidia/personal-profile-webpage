@@ -4,86 +4,240 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Our Personal Profile Webpage</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Irish+Grover&family=Rum+Raisin&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <h1>INSIDE OUT NA AQ</h1>
+    <div class="home-page">
 
-    <p>
-        
-    </p>
+        <!-- WEBSITE BANNER -->
+        <header class="top-banner">
+            <img src="images/bannerpicture.png" alt="Colorful polka dot banner">
+            <h1>INSIDE OUT NA AQ</h1>
+        </header>
 
-    <h2>Meet Our Members!</h2>
+        <!-- NAVIGATION BAR -->
+        <nav class="navbar">
 
-    <img
-        src="images/grouppic.png"
-        alt="Our five group members represented by Inside Out characters"
-        usemap="#groupmembers"
-        width="1472"
-        height="981"
-    >
+            <div class="nav-links">
+                <a href="index.html" class="active">HOME</a>
+                <a href="#members">MEMBERS</a>
+                <a href="#about">ABOUT US</a>
+                <a href="#profiles">PROFILES</a>
+                <a href="#contact">CONTACT</a>
+            </div>
 
-    <map name="groupmembers">
+            <form class="search-box" id="searchForm" role="search">
+                <input
+                    type="search"
+                    id="memberSearch"
+                    placeholder="Search members..."
+                    aria-label="Search members"
+                >
 
-        <area
-            shape="rect"
-            coords="365,210,590,540"
-            href="judiel.html"
-            alt="Judiel - Disgust"
-            title="Judiel"
-        >
+                <button type="submit" aria-label="Search">🔍</button>
+            </form>
 
-        <area
-            shape="rect"
-            coords="625,210,850,540"
-            href="abi.html"
-            alt="Abi - Joy"
-            title="Abi"
-        >
+        </nav>
 
-        <area
-            shape="rect"
-            coords="890,210,1115,540"
-            href="angel.html"
-            alt="Angel - Sadness"
-            title="Angel"
-        >
+        <!-- MEMBERS SECTION -->
+        <h2 id="members" class="section-title">Meet Our Members!</h2>
 
-        <area
-            shape="rect"
-            coords="480,575,705,890"
-            href="drew.html"
-            alt="Drew - Anxiety"
-            title="Drew"
-        >
+        <p class="intro">
+            Click an Inside Out character to get to know our members!
+        </p>
 
-        <area
-            shape="rect"
-            coords="800,575,1025,890"
-            href="christian.html"
-            alt="Christian - Embarrassment"
-            title="Christian"
-        >
+        <!-- GROUP PICTURE -->
+        <div class="group-picture" id="profiles">
 
-    </map>
+            <img
+                src="images/grouppic.png"
+                alt="Our five group members represented by Inside Out characters"
+                usemap="#groupmembers"
+                width="1472"
+                height="981"
+            >
 
-    <h2>About Our Group</h2>
+        </div>
 
-    <p>
-        hello
-    </p>
+        <!-- CLICKABLE CHARACTER AREAS -->
+        <map name="groupmembers">
 
-    <h2>hi</h2>
+            <area
+                shape="rect"
+                coords="365,210,590,540"
+                href="judiel.html"
+                alt="Judiel - Disgust"
+                title="Judiel"
+                data-member="judiel disgust"
+            >
 
-    <ul>
-        <li>hi</li>
-        <li>hi</li>
-        <li>hi</li>
-        <li>hi</li>
-        <li>hi</li>
-    </ul>
+            <area
+                shape="rect"
+                coords="520,180,1170,560"
+                href="abi.html"
+                alt="Abi - Joy"
+                title="Abi"
+                data-member="abi joy"
+            >
+
+            <area
+                shape="rect"
+                coords="980,150,1230,580"
+                href="angel.html"
+                alt="Angel - Sadness"
+                title="Angel"
+                data-member="angel sadness"
+            >
+
+            <area
+                shape="rect"
+                coords="480,575,705,890"
+                href="drew.html"
+                alt="Drew - Anxiety"
+                title="Drew"
+                data-member="drew anxiety"
+            >
+
+            <area
+                shape="rect"
+                coords="840,555,1080,915"
+                href="christian.html"
+                alt="Christian - Embarrassment"
+                title="Christian"
+                data-member="christian embarrassment"
+            >
+
+        </map>
+
+        <!-- ABOUT OUR GROUP -->
+        <section class="about-section" id="about">
+
+            <h2 class="section-title">About Our Group</h2>
+
+            <p>
+                We are a group of students with different personalities,
+                interests, and talents. Like the emotions in Inside Out,
+                each of us brings something unique to our team!
+            </p>
+
+        </section>
+
+        <!-- GROUP INFORMATION -->
+        <section class="group-info" id="contact">
+
+            <h2 class="section-title">Get to Know Us!</h2>
+
+            <ul>
+                <li>Judiel - Disgust</li>
+                <li>Abi - Joy</li>
+                <li>Angel - Sadness</li>
+                <li>Drew - Anxiety</li>
+                <li>Christian - Embarrassment</li>
+            </ul>
+
+        </section>
+
+        <footer class="site-footer">
+            <p>Made with love by our group 💗</p>
+        </footer>
+
+    </div>
+
+    <!-- JAVASCRIPT -->
+    <script>
+        const groupImage = document.querySelector(
+            'img[usemap="#groupmembers"]'
+        );
+
+        const memberAreas = document.querySelectorAll(
+            'map[name="groupmembers"] area'
+        );
+
+        // Keep character click areas aligned when the image resizes.
+        function resizeImageMap() {
+            if (!groupImage || !groupImage.naturalWidth) {
+                return;
+            }
+
+            const scaleX =
+                groupImage.clientWidth / groupImage.naturalWidth;
+
+            const scaleY =
+                groupImage.clientHeight / groupImage.naturalHeight;
+
+            memberAreas.forEach(area => {
+                if (!area.dataset.originalCoords) {
+                    area.dataset.originalCoords =
+                        area.getAttribute("coords");
+                }
+
+                const originalCoords =
+                    area.dataset.originalCoords
+                        .split(",")
+                        .map(Number);
+
+                const newCoords = originalCoords.map(
+                    (coord, index) => {
+                        return Math.round(
+                            coord *
+                            (index % 2 === 0 ? scaleX : scaleY)
+                        );
+                    }
+                );
+
+                area.setAttribute("coords", newCoords.join(","));
+            });
+        }
+
+        if (groupImage.complete) {
+            resizeImageMap();
+        } else {
+            groupImage.addEventListener("load", resizeImageMap);
+        }
+
+        window.addEventListener("resize", resizeImageMap);
+
+        // Search for a member by name or Inside Out character.
+        document.getElementById("searchForm").addEventListener(
+            "submit",
+            function(event) {
+                event.preventDefault();
+
+                const query = document
+                    .getElementById("memberSearch")
+                    .value.trim().toLowerCase();
+
+                if (!query) {
+                    document.getElementById("memberSearch").focus();
+                    return;
+                }
+
+                const matchingMember = Array.from(memberAreas).find(
+                    area => area.dataset.member.includes(query)
+                );
+
+                if (matchingMember) {
+                    window.location.href = matchingMember.href;
+                } else {
+                    alert(
+                        "Sorry, no matching member found. " +
+                        "Try Judiel, Abi, Angel, Drew, Christian, " +
+                        "Joy, Disgust, Sadness, Anxiety, or Embarrassment."
+                    );
+                }
+            }
+        );
+    </script>
 
 </body>
 </html>
