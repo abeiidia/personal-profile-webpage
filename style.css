@@ -1,713 +1,1061 @@
 
+
 /* GOOGLE FONTS */
+
 @import url('https://fonts.googleapis.com/css2?family=Irish+Grover&family=Rum+Raisin&display=swap');
 
 
+
+
+
 /* GENERAL SETTINGS */
+
 * {
+
     box-sizing: border-box;
+
 }
+
+
 
 html {
+
     scroll-behavior: smooth;
+
 }
 
+
+
 body {
+
     margin: 0;
+
     padding: 0;
+
     background: #eaf7fc;
+
     color: #425d70;
+
     font-family: Arial, sans-serif;
+
 }
+
+
+
 
 
 /* MAIN A4 LANDSCAPE PAGE */
+
 .home-page {
+
     width: 297mm;
+
     min-height: 210mm;
+
     margin: 20px auto;
+
     padding: 12mm;
+
     background-color: #ffffff;
+
     background-image: url("images/homepagebackground.jpg");
+
     background-position: center;
+
     background-size: cover;
+
     background-repeat: repeat-y;
+
     box-shadow: 0 5px 20px rgba(75, 130, 160, 0.18);
+
     overflow-wrap: break-word;
+
 }
+
+
+
 
 
 /* TOP BANNER */
+
 .top-banner {
+
     position: relative;
+
     width: calc(100% + 24mm);
+
     height: 50mm;
+
     margin-top: -40px;
+
     margin-left: -12mm;
+
     overflow: hidden;
+
     display: flex;
+
     justify-content: center;
+
     align-items: center;
+
 }
+
+
 
 .top-banner img {
+
     position: absolute;
+
     width: 100%;
+
     height: 100%;
+
     object-fit: cover;
+
     inset: 0;
+
 }
 
+
+
 .top-banner h1 {
+
     position: relative;
+
     z-index: 1;
+
     margin: 0;
+
     padding: 10px;
+
     color: #66ccff;
+
     font-family: 'Irish Grover', cursive;
+
     font-size: 42px;
+
     text-align: center;
+
     text-shadow: 1px 3px 0 #080f11;
+
 }
+
+
+
 
 
 /* NAVIGATION BAR */
+
 .navbar {
+
     display: flex;
+
     align-items: center;
+
     justify-content: space-between;
+
     flex-wrap: wrap;
+
     gap: 10px;
+
     padding: 0;
+
     margin: 0 -12mm 25px;
+
     background: #86c8e3;
+
     border-bottom: 5px solid #d7f1fa;
+
 }
+
+
 
 .nav-links {
+
     display: flex;
+
     flex-wrap: wrap;
+
     align-items: center;
+
 }
+
+
 
 .nav-links a {
+
     display: inline-block;
+
     padding: 13px 17px;
+
     color: #ffffff;
+
     font-size: 12px;
+
     font-weight: bold;
+
     text-decoration: none;
+
     transition: background 0.2s ease;
+
 }
 
+
+
 .nav-links a:hover,
+
 .nav-links a.active {
+
     background: #4b9ec5;
+
     color: #ffffff;
+
 }
+
+
+
 
 
 /* SEARCH BOX */
+
 .search-box {
+
     display: flex;
+
     align-items: center;
+
     gap: 4px;
+
     margin: 5px 12px;
+
 }
+
+
 
 .search-box input {
+
     width: 155px;
+
     max-width: 100%;
+
     padding: 8px 10px;
+
     border: 2px solid #d1edf7;
+
     border-radius: 5px;
+
     outline: none;
+
     font-size: 12px;
+
 }
+
+
 
 .search-box input:focus {
+
     border-color: #398cb3;
+
 }
+
+
 
 .search-box button {
+
     padding: 7px 10px;
+
     border: none;
+
     border-radius: 5px;
+
     background: #ffffff;
+
     cursor: pointer;
+
 }
 
+
+
 .search-box button:hover {
+
     background: #e4f6fc;
+
 }
+
+
+
 
 
 /* SECTION HEADINGS */
+
 .section-title {
+
     margin: 35px 0 15px;
+
     color: #4c9dc2;
+
     font-family: 'Rum Raisin', cursive;
+
     font-size: 30px;
+
     font-weight: normal;
+
     text-align: center;
+
 }
+
+
+
 
 
 /* MEMBERS SECTION */
+
 .home-page #members {
+
     margin-top: 35px;
+
 }
+
+
 
 .intro {
+
     margin: 10px auto 20px;
+
     color: #526b7c;
+
     font-family: Arial, sans-serif;
+
     font-size: 14px;
+
     line-height: 1.7;
+
     text-align: center;
+
 }
+
+
 
 .group-picture {
+
     width: 100%;
+
     margin: 20px auto;
+
     text-align: center;
+
 }
 
+
+
 .group-picture img {
+
     display: block;
+
     width: 100%;
+
     height: auto;
+
     margin: 0 auto;
+
     border: 4px solid #ffffff;
+
     border-radius: 12px;
+
     box-shadow: 0 4px 12px rgba(75, 130, 160, 0.15);
+
 }
+
+
+
 
 
 /* ABOUT OUR GROUP */
+
 .about-section,
+
 .group-info {
+
     margin-top: 40px;
+
     padding: 10px 0;
+
     text-align: center;
+
 }
 
+
+
 .home-page .about-intro {
+
     max-width: 700px;
+
     margin: 10px auto 20px;
+
     color: #526b7c;
+
     font-family: Arial, sans-serif;
+
     font-size: 14px;
+
     line-height: 1.8;
+
     text-align: center;
+
 }
+
+
+
 
 
 /* FOLDER CONTAINER */
+
 .home-page .folder-container {
+
     width: 100%;
+
     max-width: 500px;
+
     margin: 15px auto 30px;
+
     text-align: center;
+
 }
+
+
+
 
 
 /* CLICKABLE FOLDER BUTTON */
+
 .home-page .folder-button {
+
     display: flex;
+
     flex-direction: column;
+
     align-items: center;
+
     gap: 6px;
+
     margin: 0 auto;
+
     padding: 8px;
+
     background: transparent;
+
     border: none;
+
     cursor: pointer;
+
 }
+
+
+
 
 
 /* SMALL FOLDER IMAGE */
+
 .home-page .folder-picture {
+
     display: block;
+
     width: 70px;
+
     height: 55px;
+
     object-fit: contain;
+
     transition: transform 0.2s ease;
+
 }
 
+
+
 .home-page .folder-button:hover .folder-picture {
+
     transform: translateY(-3px) scale(1.05);
+
 }
+
+
+
 
 
 /* FOLDER LABEL */
+
 .home-page .folder-label {
+
     color: #347d9a;
+
     font-family: Arial, sans-serif;
+
     font-size: 11px;
+
     font-weight: bold;
+
     letter-spacing: 1px;
+
 }
 
+
+
 .home-page .folder-button:focus-visible {
+
     outline: 2px dashed #4c9dc2;
+
     outline-offset: 4px;
+
 }
+
+
+
 
 
 /* HIDDEN MESSAGE THAT APPEARS WHEN FOLDER IS CLICKED */
+
 .home-page .folder-message {
+
     margin-top: 12px;
+
     padding: 20px;
+
     background: #fefeff;
+
     border: 2px dashed #b9daff;
+
     border-radius: 15px;
+
     color: #526b7c;
+
     font-family: Arial, sans-serif;
+
     font-size: 13px;
+
     line-height: 1.8;
+
     text-align: justify;
+
     overflow-wrap: anywhere;
+
     animation: folderReveal 0.3s ease;
+
 }
+
+
 
 .home-page .folder-message[hidden] {
+
     display: none;
+
 }
+
+
 
 .home-page .folder-message h3 {
+
     margin-top: 0;
+
     margin-bottom: 12px;
+
     color: #f2f931;
+
     font-family: 'Rum Raisin', cursive;
+
     font-size: 23px;
+
     font-weight: normal;
+
     text-align: center;
+
 }
 
+
+
 .home-page .folder-message p {
+
     margin: 10px 0;
+
     line-height: 1.8;
+
     text-align: justify;
+
 }
+
+
+
+
 
 
 
 /* MEMBERS LIST INSIDE FOLDER */
+
 .home-page .member-list {
+
     display: table;
+
     margin: 10px auto 18px;
+
     padding-left: 25px;
+
     color: #526b7c;
+
     line-height: 2;
+
     text-align: left;
+
 }
+
+
 
 .home-page .member-list li {
+
     padding-left: 4px;
+
 }
 
+
+
 .home-page .member-list strong {
+
     color: #4c9dc2;
+
 }
+
+
+
 
 
 /* FOLDER OPENING ANIMATION */
+
 @keyframes folderReveal {
+
     from {
+
         opacity: 0;
+
         transform: translateY(-8px);
+
     }
 
+
+
     to {
+
         opacity: 1;
+
         transform: translateY(0);
+
     }
+
 }
+
+
+
 
 
 /* FOOTER */
+
 .site-footer {
+
     margin-top: 35px;
+
     padding: 18px 10px;
+
     background: #e8f7fc;
+
     border-top: 3px dashed #9dd5e9;
+
     color: #5489a1;
+
     font-family: Arial, sans-serif;
+
     font-size: 12px;
+
     line-height: 1.7;
+
     text-align: center;
+
 }
 
+
+
 .site-footer p {
+
     margin: 4px 0;
+
 }
+
+
+
 
 
 /* INDIVIDUAL PROFILE PAGES */
-.drew-page {
-    width: 297mm;
-    min-height: 210mm;
-    margin: 20px auto;
-    padding: 12mm;
-    background-color: #F58727;
-    box-shadow: 0 5px 20px rgba(75, 130, 160, 0.18);
-}
 
 
 /* RESPONSIVE DESIGN */
+
 @media screen and (max-width: 900px) {
 
+
+
     .home-page,
+
     .drew-page {
+
         width: 100%;
+
         min-height: 100vh;
+
         margin: 0 auto;
+
         padding: 20px 12px;
+
     }
+
+
 
     .top-banner {
+
         width: calc(100% + 24px);
+
         height: 130px;
+
         margin-top: -20px;
+
         margin-left: -12px;
+
     }
+
+
 
     .top-banner h1 {
+
         font-size: clamp(25px, 5vw, 38px);
+
     }
+
+
 
     .navbar {
+
         margin: 0 -12px 20px;
+
         flex-direction: column;
+
         align-items: stretch;
+
     }
+
+
 
     .nav-links {
+
         justify-content: center;
+
     }
+
+
 
     .nav-links a {
+
         padding: 10px;
+
         font-size: 11px;
+
     }
+
+
 
     .search-box {
+
         justify-content: center;
+
         margin: 5px 10px 12px;
+
     }
+
+
 
     .search-box input {
+
         width: 220px;
+
     }
+
+
 
     .section-title {
+
         font-size: 26px;
+
     }
+
+
 
     .home-page .folder-message {
+
         padding: 15px;
+
     }
 
+
+
 }
+
+
+
 
 
 /* PRINT SETTINGS: A4 LANDSCAPE */
+
 @page {
+
     size: A4 landscape;
+
     margin: 0;
+
 }
 
+
+
 @media print {
+
+
 
     body {
+
         background: #ffffff;
+
     }
+
+
 
     .home-page,
+
     .drew-page {
+
         width: 297mm;
+
         min-height: 210mm;
+
         margin: 0;
+
         box-shadow: none;
+
     }
+
+
 
     .navbar {
+
         -webkit-print-color-adjust: exact;
+
         print-color-adjust: exact;
+
     }
 
+
+
 }
 
-abi's page 
+/* =========================================================
+   INDIVIDUAL MEMBER PROFILES
+   Shared layout, separate color themes.
+   ========================================================= */
 
-body:has(.profile) {
-    margin: 0;
-    padding: 0;
-    background: #b9cfff;
-    color: #ade6ff;
-    font-family: "Trebuchet MS", Arial, sans-serif;
+.abi-page {
+    --page-bg: #b9cfff; --header-bg: #e1e9b3; --content-bg: #faffb6;
+    --text-color: #243746; --heading-color: #269ed1; --border-color: #62c6f1;
+    --hobby-bg: #c5f0fa; --hobby-text: #243746;
 }
-
-/* A4 LANDSCAPE HEADER */
-body:has(.profile) header {
-    box-sizing: border-box;
-    width: 297mm;
-    height: 30mm;
-    margin: 0 auto;
-    padding: 4mm 12mm;
-    background: #e1e9b3;
-    border: 8px dotted #62c6f1;
-    border-bottom: none;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-body:has(.profile) header h1 {
-    margin: 0;
-    font-size: 25pt;
-    color: #44c1ff;
-    text-shadow: 2px 2px #a92778;
-}
-
-body:has(.profile) header p {
-    margin: 1mm 0 0;
-    font-size: 10pt;
-    color: #000000;
-}
-
-/* MAIN A4 CONTENT */
-body:has(.profile) main {
-    box-sizing: border-box;
-    width: 297mm;
-    height: 180mm;
-    margin: 0 auto;
-    padding: 5mm 12mm;
-    background: #F5F227;
-    border-left: 8px dotted #fff044;
-    border-right: 8px dotted #fff044;
-    border-bottom: 8px dotted #fff044;
-    text-align: center;
-    overflow: hidden;
-}
-
-/* PROFILE PHOTO */
-body:has(.profile) .profile {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-body:has(.profile) .profile > img {
-    display: block;
-    width: 40mm;
-    height: 48mm;
-    object-fit: cover;
-    object-position: center;
-    background: white;
-    border: 4px solid white;
-    outline: 2px solid #beccf4;
-    border-radius: 10px;
-    padding: 2px;
-    box-sizing: border-box;
-    margin: 0 auto 2mm;
-}
-
-/* ABOUT ME */
-body:has(.profile) .profile h2 {
-    margin: 2mm 0;
-    color: #8bdeff;
-    text-shadow: 1px 1px #000000;
-    font-size: 17pt;
-}
-
-body:has(.profile) .profile p {
-    margin: 1mm 0;
-    font-size: 10pt;
-    line-height: 1.3;
-    color: #000000;
-}
-
-/* HOBBIES SECTION */
-body:has(.profile) .hobbies {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 8mm;
-    margin: 5mm 0 0;
-}
-
-body:has(.profile) .hobbies h2 {
-    grid-column: 1 / -1;
-    margin: 0;
-    color: #8bdeff;
-    text-shadow: 1px 1px #000000;
-    font-size: 18pt;
-}
-
-/* HOBBY CARDS — NARROWER FRAMES */
-body:has(.profile) .hobby {
-    width: 55mm;
-    justify-self: center;
-    padding: 3mm;
-    background: #c5f0fa;
-    border: 3px dotted #b3c9e9;
-    border-radius: 10px;
-    text-align: center;
-    box-sizing: border-box;
-}
-
-body:has(.profile) .hobby img {
-    display: block;
-    width: 100%;
-    height: 45mm;
-    object-fit: contain;
-    background: white;
-    border: 2px solid #bbe0f8;
-    padding: 2px;
-    box-sizing: border-box;
-    margin: 0 auto;
-}
-
-body:has(.profile) .hobby p {
-    margin: 2mm 0 0;
-    font-size: 10pt;
-    color: #000000;
-}
-
-/* BACK LINK */
-body:has(.profile) main > a {
-    display: inline-block;
-    margin: 4mm 0 0;
-    color: #a92778;
-    font-size: 10pt;
-    font-weight: bold;
-    text-decoration: none;
-}
-
-body:has(.profile) main > a:hover {
-    text-decoration: underline;
-}
-
-/* SMALLER SCREENS */
-@media screen and (max-width: 900px) {
-    body:has(.profile) header,
-    body:has(.profile) main {
-        width: 100%;
-        height: auto;
-    }
-
-    body:has(.profile) main {
-        min-height: 100vh;
-        overflow: visible;
-        padding: 20px;
-    }
-
-    body:has(.profile) header {
-        padding: 15px;
-    }
-
-    body:has(.profile) .hobbies {
-        gap: 12px;
-    }
-
-    body:has(.profile) .hobby {
-        width: 100%;
-    }
-
-    body:has(.profile) .hobby img {
-        height: 100px;
-    }
-}
-
-/* A4 LANDSCAPE PRINTING */
-@page {
-    size: A4 landscape;
-    margin: 0;
-}
-
-@media print {
-    body:has(.profile) {
-        margin: 0;
-        background: #a8c5e1;
-        print-color-adjust: exact;
-        -webkit-print-color-adjust: exact;
-    }
-
-    body:has(.profile) header,
-    body:has(.profile) main {
-        margin: 0;
-        box-shadow: none;
-    }
-}
-
-
-judiel's page
 .judiel-page {
+    --page-bg: #d9f2e6; --header-bg: #eff9cf; --content-bg: #f5fff9;
+    --text-color: #285943; --heading-color: #27865b; --border-color: #79c9a3;
+    --hobby-bg: #e2f8ec; --hobby-text: #285943;
+}
+.christian-page {
+    --page-bg: #d8e6ff; --header-bg: #cdeee8; --content-bg: #f5f8ff;
+    --text-color: #253c68; --heading-color: #356ad2; --border-color: #83a8f5;
+    --hobby-bg: #e4edff; --hobby-text: #253c68;
+}
+.angel-page {
+    --page-bg: #f6dafa; --header-bg: #f3d4f6; --content-bg: #fff5ff;
+    --text-color: #713c78; --heading-color: #b05bbd; --border-color: #d69bdf;
+    --hobby-bg: #fbe8fc; --hobby-text: #713c78;
+}
+.drew-page {
+    --page-bg: #ffb347; --header-bg: #ffe0b2; --content-bg: #fff5e6;
+    --text-color: #663300; --heading-color: #e87500; --border-color: #ff8c42;
+    --hobby-bg: #ffe0b2; --hobby-text: #663300;
+}
 
-body:has(.profile) {
-    margin: 0;
-    padding: 0;
-    background: #b9cfff;
-    color: #5EF527;
+.abi-page, .judiel-page, .christian-page, .angel-page, .drew-page {
+    margin: 0; padding: 0; background: var(--page-bg); color: var(--text-color);
     font-family: "Trebuchet MS", Arial, sans-serif;
 }
 
-/* A4 LANDSCAPE HEADER */
-body:has(.profile) header {
+.abi-page header, .judiel-page header, .christian-page header, .angel-page header,
+.drew-page > header {
+    box-sizing: border-box; width: 297mm; height: 30mm; margin: 0 auto;
+    padding: 4mm 12mm; background: var(--header-bg);
+    border: 8px dotted var(--border-color); border-bottom: none;
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    text-align: center;
+}
+.abi-page header h1, .judiel-page header h1, .christian-page header h1,
+.angel-page header h1, .drew-page > header h1 {
+    margin: 0; color: var(--heading-color); font-family: "Trebuchet MS", Arial, sans-serif;
+    font-size: 25pt; text-shadow: 1px 1px #fff;
+}
+.abi-page header p, .judiel-page header p, .christian-page header p,
+.angel-page header p, .drew-page > header p { margin: 1mm 0 0; font-size: 10pt; }
+
+.abi-page main, .judiel-page main, .christian-page main, .angel-page main,
+.drew-page > .drew-main {
+    box-sizing: border-box; width: 297mm; height: 180mm; margin: 0 auto;
+    padding: 5mm 12mm; background: var(--content-bg);
+    border: 8px dotted var(--border-color); border-top: none;
+    text-align: center; overflow: hidden;
+}
+.abi-page .profile, .judiel-page .profile, .christian-page .profile,
+.angel-page .profile, .drew-page .drew-profile {
+    display: flex; flex-direction: column; align-items: center;
+}
+.abi-page .profile > img, .judiel-page .profile > img, .christian-page .profile > img,
+.angel-page .profile > img, .drew-page .drew-photo {
+    display: block; width: 40mm; height: 45mm; object-fit: cover; object-position: center;
+    background: #fff; border: 4px solid #fff; outline: 2px solid var(--border-color);
+    border-radius: 10px; padding: 2px; box-sizing: border-box; margin: 0 auto 2mm;
+}
+.abi-page .profile h2, .judiel-page .profile h2, .christian-page .profile h2,
+.angel-page .profile h2, .abi-page .hobbies h2, .judiel-page .hobbies h2,
+.christian-page .hobbies h2, .angel-page .hobbies h2, .drew-page .drew-hobbies h2 {
+    margin: 2mm 0; color: var(--heading-color); font-size: 17pt;
+}
+.abi-page .profile p, .judiel-page .profile p, .christian-page .profile p,
+.angel-page .profile p, .drew-page .drew-info p {
+    margin: 1mm 0; font-size: 10pt; line-height: 1.3; color: var(--text-color);
+}
+.christian-page .profile-info { display: flex; flex-direction: column; align-items: center; }
+
+.abi-page .hobbies, .judiel-page .hobbies, .angel-page .hobbies,
+.drew-page .drew-hobbies {
+    display: grid; grid-template-columns: repeat(3, minmax(0, 1fr));
+    column-gap: 8mm; margin: 4mm 0 0;
+}
+.abi-page .hobbies > h2, .judiel-page .hobbies > h2, .angel-page .hobbies > h2,
+.christian-page .hobbies { margin: 4mm 0 0; }
+.christian-page .hobbies > h2 { margin: 0 0 3mm; color: var(--heading-color); }
+.abi-page .hobby-list, .christian-page .hobby-list, .drew-page .drew-hobby-list {
+    display: flex; justify-content: center; align-items: flex-start; gap: 8mm;
+}
+.christian-page .hobby-list { width: 100%; }
+.abi-page .hobby, .judiel-page .hobby, .christian-page .hobby,
+.angel-page .hobby, .drew-page .drew-hobby {
+    width: 55mm; max-width: 100%; justify-self: center; padding: 3mm;
+    background: var(--hobby-bg); border: 3px dotted var(--border-color);
+    border-radius: 10px; text-align: center; box-sizing: border-box;
+}
+.abi-page .hobby img, .judiel-page .hobby img, .christian-page .hobby img,
+.angel-page .hobby img, .drew-page .drew-hobby img {
+    display: block; width: 100%; height: 38mm; object-fit: contain; background: #fff;
+    border: 2px solid var(--border-color); padding: 2px; box-sizing: border-box; margin: 0 auto;
+}
+.abi-page .hobby p, .judiel-page .hobby p, .christian-page .hobby p,
+.angel-page .hobby p, .drew-page .drew-hobby p {
+    margin: 2mm 0 0; color: var(--hobby-text); font-size: 10pt;
+}
+.abi-page main > a, .judiel-page main > a, .christian-page main > a,
+.angel-page main > a, .drew-page .drew-back-button {
+    display: inline-block; margin: 4mm 0 0; color: var(--heading-color);
+    font-size: 10pt; font-weight: bold; text-decoration: none;
+}
+.abi-page main > a:hover, .judiel-page main > a:hover, .christian-page main > a:hover,
+.angel-page main > a:hover, .drew-page .drew-back-button:hover { text-decoration: underline; }
+
+@media screen and (max-width: 900px) {
+    .abi-page header, .judiel-page header, .christian-page header, .angel-page header,
+    .drew-page > header, .abi-page main, .judiel-page main, .christian-page main,
+    .angel-page main, .drew-page > .drew-main {
+        width: 100%; height: auto; min-height: 0; margin: 0; padding: 16px;
+    }
+    .abi-page .hobbies, .judiel-page .hobbies, .angel-page .hobbies,
+    .abi-page .hobby-list, .christian-page .hobby-list, .drew-page .drew-hobby-list {
+        flex-wrap: wrap; gap: 12px;
+    }
+    .abi-page .hobby, .judiel-page .hobby, .christian-page .hobby,
+    .angel-page .hobby, .drew-page .drew-hobby { width: min(100%, 260px); }
+    .abi-page main, .judiel-page main, .christian-page main, .angel-page main,
+    .drew-page > .drew-main { overflow: visible; }
+}
+
+@page { size: A4 landscape; margin: 0; }
+@media print {
+    body { print-color-adjust: exact; -webkit-print-color-adjust: exact; }
+    .home-page, .drew-page { box-shadow: none; }
+    .abi-page header, .judiel-page header, .christian-page header, .angel-page header,
+    .drew-page > header, .abi-page main, .judiel-page main, .christian-page main,
+    .angel-page main, .drew-page > .drew-main { margin: 0; }
+}
+
+/* ANGEL'S PROFILE — SAME LAYOUT AS ABI */
+
+body.angel-page {
+    margin: 0;
+    padding: 0;
+    background: #f6dafa;
+    color: #713c78;
+    font-family: "Trebuchet MS", Arial, sans-serif;
+}
+
+/* HEADER */
+body.angel-page:has(.profile) header {
     box-sizing: border-box;
     width: 297mm;
     height: 30mm;
     margin: 0 auto;
     padding: 4mm 12mm;
-    background: #e1e9b3;
-    border: 8px dotted #62c6f1;
+    background: #f4c9ee;
+    border: 8px dotted #d69bdf;
     border-bottom: none;
-    text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    text-align: center;
 }
 
-body:has(.profile) header h1 {
+body.angel-page:has(.profile) header h1 {
     margin: 0;
+    color: #a94db5;
     font-size: 25pt;
-    color: #44c1ff;
-    text-shadow: 2px 2px #a92778;
+    text-shadow: 2px 2px #ffffff;
 }
 
-body:has(.profile) header p {
-    margin: 1mm 0 0;
-    font-size: 10pt;
-    color: #000000;
-}
-
-/* MAIN A4 CONTENT */
-body:has(.profile) main {
+/* MAIN CONTENT */
+body.angel-page:has(.profile) main {
     box-sizing: border-box;
     width: 297mm;
     height: 180mm;
     margin: 0 auto;
     padding: 5mm 12mm;
-    background: #F5F227;
-    border-left: 8px dotted #fff044;
-    border-right: 8px dotted #fff044;
-    border-bottom: 8px dotted #fff044;
+    background: #fff0fc;
+    border-left: 8px dotted #d69bdf;
+    border-right: 8px dotted #d69bdf;
+    border-bottom: 8px dotted #d69bdf;
     text-align: center;
     overflow: hidden;
 }
 
-/* PROFILE PHOTO */
-body:has(.profile) .profile {
+/* PROFILE */
+body.angel-page:has(.profile) .profile {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-body:has(.profile) .profile > img {
+body.angel-page:has(.profile) .profile > img {
     display: block;
     width: 40mm;
     height: 48mm;
@@ -715,203 +1063,194 @@ body:has(.profile) .profile > img {
     object-position: center;
     background: white;
     border: 4px solid white;
-    outline: 2px solid #beccf4;
+    outline: 2px solid #d69bdf;
     border-radius: 10px;
     padding: 2px;
     box-sizing: border-box;
     margin: 0 auto 2mm;
 }
 
-/* ABOUT ME */
-body:has(.profile) .profile h2 {
+body.angel-page:has(.profile) .profile h2 {
     margin: 2mm 0;
-    color: #8bdeff;
-    text-shadow: 1px 1px #000000;
+    color: #b05bbd;
     font-size: 17pt;
+    text-shadow: 1px 1px #ffffff;
 }
 
-body:has(.profile) .profile p {
+body.angel-page:has(.profile) .profile p {
     margin: 1mm 0;
     font-size: 10pt;
     line-height: 1.3;
-    color: #000000;
+    color: #713c78;
 }
 
-/* HOBBIES SECTION */
-body:has(.profile) .hobbies {
+/* HOBBIES */
+body.angel-page:has(.profile) .hobbies {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 8mm;
     margin: 5mm 0 0;
 }
 
-body:has(.profile) .hobbies h2 {
+body.angel-page:has(.profile) .hobbies h2 {
     grid-column: 1 / -1;
     margin: 0;
-    color: #8bdeff;
-    text-shadow: 1px 1px #000000;
+    color: #b05bbd;
     font-size: 18pt;
 }
 
-/* HOBBY CARDS — NARROWER FRAMES */
-body:has(.profile) .hobby {
+body.angel-page:has(.profile) .hobby {
     width: 55mm;
     justify-self: center;
     padding: 3mm;
-    background: #c5f0fa;
-    border: 3px dotted #b3c9e9;
+    background: #fbe8fc;
+    border: 3px dotted #d69bdf;
     border-radius: 10px;
-    text-align: center;
     box-sizing: border-box;
+    text-align: center;
 }
 
-body:has(.profile) .hobby img {
+body.angel-page:has(.profile) .hobby img {
     display: block;
     width: 100%;
     height: 45mm;
     object-fit: contain;
     background: white;
-    border: 2px solid #bbe0f8;
+    border: 2px solid #e8b8ed;
     padding: 2px;
     box-sizing: border-box;
     margin: 0 auto;
 }
 
-body:has(.profile) .hobby p {
+body.angel-page:has(.profile) .hobby p {
     margin: 2mm 0 0;
     font-size: 10pt;
-    color: #000000;
+    color: #713c78;
 }
 
 /* BACK LINK */
-body:has(.profile) main > a {
+body.angel-page:has(.profile) main > a {
     display: inline-block;
     margin: 4mm 0 0;
-    color: #a92778;
+    color: #a94db5;
     font-size: 10pt;
     font-weight: bold;
     text-decoration: none;
 }
 
-body:has(.profile) main > a:hover {
+body.angel-page:has(.profile) main > a:hover {
     text-decoration: underline;
 }
 
-/* SMALLER SCREENS */
+/* RESPONSIVE */
 @media screen and (max-width: 900px) {
-    body:has(.profile) header,
-    body:has(.profile) main {
+    body.angel-page:has(.profile) header,
+    body.angel-page:has(.profile) main {
         width: 100%;
         height: auto;
     }
 
-    body:has(.profile) main {
-        min-height: 100vh;
-        overflow: visible;
-        padding: 20px;
-    }
-
-    body:has(.profile) header {
+    body.angel-page:has(.profile) header {
         padding: 15px;
     }
 
-    body:has(.profile) .hobbies {
+    body.angel-page:has(.profile) main {
+        min-height: 100vh;
+        padding: 20px;
+        overflow: visible;
+    }
+
+    body.angel-page:has(.profile) .hobbies {
         gap: 12px;
     }
 
-    body:has(.profile) .hobby {
+    body.angel-page:has(.profile) .hobby {
         width: 100%;
     }
 
-    body:has(.profile) .hobby img {
+    body.angel-page:has(.profile) .hobby img {
         height: 100px;
     }
 }
 
-/* A4 LANDSCAPE PRINTING */
+/* A4 LANDSCAPE PRINT */
 @page {
     size: A4 landscape;
     margin: 0;
 }
 
 @media print {
-    body:has(.profile) {
+    body.angel-page {
         margin: 0;
-        background: #a8c5e1;
         print-color-adjust: exact;
         -webkit-print-color-adjust: exact;
     }
 
-    body:has(.profile) header,
-    body:has(.profile) main {
+    body.angel-page:has(.profile) header,
+    body.angel-page:has(.profile) main {
         margin: 0;
         box-shadow: none;
     }
 }
 
- /* CHRISTIAN'S PAGE STYLES */
 
-body:has(.christian-profile) {
+/* JUDIEL'S PROFILE — SAME LAYOUT AS ABI */
+
+body.judiel-page {
     margin: 0;
     padding: 0;
-    background: #d1f2eb;
-    color: #B427F5;
+    background: #d9f2e6;
+    color: #285943;
     font-family: "Trebuchet MS", Arial, sans-serif;
 }
 
-/* A4 LANDSCAPE HEADER */
-body:has(.christian-profile) header {
+/* HEADER */
+body.judiel-page header {
     box-sizing: border-box;
     width: 297mm;
     height: 30mm;
     margin: 0 auto;
     padding: 4mm 12mm;
-    background: #a3e4d7;
-    border: 8px dotted #1abc9c;
+    background: #bde8d2;
+    border: 8px dotted #79c9a3;
     border-bottom: none;
-    text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    text-align: center;
 }
 
-body:has(.christian-profile) header h1 {
+body.judiel-page header h1 {
     margin: 0;
+    color: #27865b;
     font-size: 25pt;
-    color: #0e6655;
-    text-shadow: 2px 2px #d4efdf;
+    text-shadow: 2px 2px #ffffff;
 }
 
-body:has(.christian-profile) header p {
-    margin: 1mm 0 0;
-    font-size: 10pt;
-    color: #000000;
-}
-
-/* MAIN A4 CONTENT */
-body:has(.christian-profile) main {
+/* MAIN CONTENT */
+body.judiel-page main {
     box-sizing: border-box;
     width: 297mm;
     height: 180mm;
     margin: 0 auto;
     padding: 5mm 12mm;
-    background: #e8f8f5; /* Mint green background para kay Christian */
-    border-left: 8px dotted #1abc9c;
-    border-right: 8px dotted #1abc9c;
-    border-bottom: 8px dotted #1abc9c;
+    background: #f5fff9;
+    border-left: 8px dotted #79c9a3;
+    border-right: 8px dotted #79c9a3;
+    border-bottom: 8px dotted #79c9a3;
     text-align: center;
     overflow: hidden;
 }
 
-/* PROFILE PHOTO */
-body:has(.christian-profile) .profile {
+/* PROFILE */
+body.judiel-page .profile {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-body:has(.christian-profile) .profile > img {
+body.judiel-page .profile > img {
     display: block;
     width: 40mm;
     height: 48mm;
@@ -919,182 +1258,188 @@ body:has(.christian-profile) .profile > img {
     object-position: center;
     background: white;
     border: 4px solid white;
-    outline: 2px solid #a3e4d7;
+    outline: 2px solid #79c9a3;
     border-radius: 10px;
     padding: 2px;
     box-sizing: border-box;
     margin: 0 auto 2mm;
 }
 
-/* ABOUT ME */
-body:has(.christian-profile) .profile h2 {
+body.judiel-page .profile h2 {
     margin: 2mm 0;
-    color: #117a65;
-    text-shadow: 1px 1px #ffffff;
+    color: #27865b;
     font-size: 17pt;
+    text-shadow: 1px 1px #ffffff;
 }
 
-body:has(.christian-profile) .profile p {
+body.judiel-page .profile p {
     margin: 1mm 0;
     font-size: 10pt;
     line-height: 1.3;
-    color: #000000;
+    color: #285943;
 }
 
-/* HOBBIES SECTION */
-body:has(.christian-profile) .hobbies {
+/* HOBBIES */
+body.judiel-page .hobbies {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 8mm;
     margin: 5mm 0 0;
 }
 
-body:has(.christian-profile) .hobbies h2 {
+body.judiel-page .hobbies h2 {
     grid-column: 1 / -1;
     margin: 0;
-    color: #117a65;
-    text-shadow: 1px 1px #ffffff;
+    color: #27865b;
     font-size: 18pt;
 }
 
-/* HOBBY CARDS */
-body:has(.christian-profile) .hobby {
+body.judiel-page .hobby {
     width: 55mm;
     justify-self: center;
     padding: 3mm;
-    background: #d4efdf;
-    border: 3px dotted #76d7c4;
+    background: #e2f8ec;
+    border: 3px dotted #79c9a3;
     border-radius: 10px;
-    text-align: center;
     box-sizing: border-box;
+    text-align: center;
 }
 
-body:has(.christian-profile) .hobby img {
+body.judiel-page .hobby img {
     display: block;
     width: 100%;
     height: 45mm;
-    object-fit: cover;
+    object-fit: contain;
     background: white;
-    border: 2px solid #a3e4d7;
+    border: 2px solid #bde8d2;
     padding: 2px;
     box-sizing: border-box;
     margin: 0 auto;
 }
 
-body:has(.christian-profile) .hobby p {
+body.judiel-page .hobby p {
     margin: 2mm 0 0;
     font-size: 10pt;
-    color: #000000;
+    color: #285943;
 }
 
 /* BACK LINK */
-body:has(.christian-profile) main > a {
+body.judiel-page main > a {
     display: inline-block;
     margin: 4mm 0 0;
-    color: #0e6655;
+    color: #27865b;
     font-size: 10pt;
     font-weight: bold;
     text-decoration: none;
 }
 
-body:has(.christian-profile) main > a:hover {
+body.judiel-page main > a:hover {
     text-decoration: underline;
 }
 
-/* SMALLER SCREENS */
+/* RESPONSIVE */
 @media screen and (max-width: 900px) {
-    body:has(.christian-profile) header,
-    body:has(.christian-profile) main {
+    body.judiel-page header,
+    body.judiel-page main {
         width: 100%;
         height: auto;
     }
 
-    body:has(.christian-profile) main {
-        min-height: 100vh;
-        overflow: visible;
-        padding: 20px;
-    }
-
-    body:has(.christian-profile) header {
+    body.judiel-page header {
         padding: 15px;
     }
 
-    body:has(.christian-profile) .hobbies {
+    body.judiel-page main {
+        min-height: 100vh;
+        padding: 20px;
+        overflow: visible;
+    }
+
+    body.judiel-page .hobbies {
         gap: 12px;
     }
 
-    body:has(.christian-profile) .hobby {
+    body.judiel-page .hobby {
         width: 100%;
     }
 
-    body:has(.christian-profile) .hobby img {
+    body.judiel-page .hobby img {
         height: 100px;
     }
 }
 
-    /* DREW'S PAGE STYLES */
+/* A4 LANDSCAPE PRINT */
+@media print {
+    body.judiel-page {
+        margin: 0;
+        print-color-adjust: exact;
+        -webkit-print-color-adjust: exact;
+    }
 
-body:has(.profile) {
+    body.judiel-page header,
+    body.judiel-page main {
+        margin: 0;
+        box-shadow: none;
+    }
+}
+
+/* DREW'S PROFILE — SAME LAYOUT AS ABI */
+
+body.drew-page {
     margin: 0;
     padding: 0;
-    background: #b9cfff;
-    color: #F58E27;
+    background: #ffb347;
+    color: #7a3500;
     font-family: "Trebuchet MS", Arial, sans-serif;
 }
 
-/* A4 LANDSCAPE HEADER */
-body:has(.profile) header {
+/* HEADER */
+body.drew-page:has(.profile) header {
     box-sizing: border-box;
     width: 297mm;
     height: 30mm;
     margin: 0 auto;
     padding: 4mm 12mm;
-    background: #e1e9b3;
-    border: 8px dotted #62c6f1;
+    background: #ffe0ad;
+    border: 8px dotted #ff8c42;
     border-bottom: none;
-    text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    text-align: center;
 }
 
-body:has(.profile) header h1 {
+body.drew-page:has(.profile) header h1 {
     margin: 0;
+    color: #e87516;
     font-size: 25pt;
-    color: #44c1ff;
-    text-shadow: 2px 2px #a92778;
+    text-shadow: 2px 2px #ffffff;
 }
 
-body:has(.profile) header p {
-    margin: 1mm 0 0;
-    font-size: 10pt;
-    color: #000000;
-}
-
-/* MAIN A4 CONTENT */
-body:has(.profile) main {
+/* MAIN CONTENT */
+body.drew-page:has(.profile) main {
     box-sizing: border-box;
     width: 297mm;
     height: 180mm;
     margin: 0 auto;
     padding: 5mm 12mm;
-    background: #f82cb1; /* Magenta/Pink background tulad ng nasa picture */
-    border-left: 8px dotted #fff044;
-    border-right: 8px dotted #fff044;
-    border-bottom: 8px dotted #fff044;
+    background: #fff7e8;
+    border-left: 8px dotted #ff8c42;
+    border-right: 8px dotted #ff8c42;
+    border-bottom: 8px dotted #ff8c42;
     text-align: center;
     overflow: hidden;
 }
 
-/* PROFILE PHOTO */
-body:has(.profile) .profile {
+/* PROFILE */
+body.drew-page:has(.profile) .profile {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-body:has(.profile) .profile > img {
+body.drew-page:has(.profile) .profile > img {
     display: block;
     width: 40mm;
     height: 48mm;
@@ -1102,116 +1447,394 @@ body:has(.profile) .profile > img {
     object-position: center;
     background: white;
     border: 4px solid white;
-    outline: 2px solid #beccf4;
+    outline: 2px solid #ffb347;
     border-radius: 10px;
     padding: 2px;
     box-sizing: border-box;
     margin: 0 auto 2mm;
 }
 
-/* ABOUT ME */
-body:has(.profile) .profile h2 {
+body.drew-page:has(.profile) .profile h2 {
     margin: 2mm 0;
-    color: #8bdeff;
-    text-shadow: 1px 1px #000000;
+    color: #e87516;
     font-size: 17pt;
+    text-shadow: 1px 1px #ffffff;
 }
 
-body:has(.profile) .profile p {
+body.drew-page:has(.profile) .profile p {
     margin: 1mm 0;
     font-size: 10pt;
     line-height: 1.3;
-    color: #000000;
+    color: #7a3500;
 }
 
-/* HOBBIES SECTION */
-body:has(.profile) .hobbies {
+/* HOBBIES */
+body.drew-page:has(.profile) .hobbies {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 8mm;
     margin: 5mm 0 0;
 }
 
-body:has(.profile) .hobbies h2 {
+body.drew-page:has(.profile) .hobbies h2 {
     grid-column: 1 / -1;
     margin: 0;
-    color: #8bdeff;
-    text-shadow: 1px 1px #000000;
+    color: #e87516;
     font-size: 18pt;
 }
 
-/* HOBBY CARDS — NARROWER FRAMES */
-body:has(.profile) .hobby {
+body.drew-page:has(.profile) .hobby {
     width: 55mm;
     justify-self: center;
     padding: 3mm;
-    background: #c5f0fa;
-    border: 3px dotted #b3c9e9;
+    background: #ffe8c7;
+    border: 3px dotted #ffad60;
     border-radius: 10px;
-    text-align: center;
     box-sizing: border-box;
+    text-align: center;
 }
 
-body:has(.profile) .hobby img {
+body.drew-page:has(.profile) .hobby img {
     display: block;
     width: 100%;
     height: 45mm;
-    object-fit: cover;
+    object-fit: contain;
     background: white;
-    border: 2px solid #bbe0f8;
+    border: 2px solid #ffc78b;
     padding: 2px;
     box-sizing: border-box;
     margin: 0 auto;
 }
 
-body:has(.profile) .hobby p {
+body.drew-page:has(.profile) .hobby p {
     margin: 2mm 0 0;
     font-size: 10pt;
-    color: #000000;
+    color: #7a3500;
 }
 
 /* BACK LINK */
-body:has(.profile) main > a {
+body.drew-page:has(.profile) main > a {
     display: inline-block;
     margin: 4mm 0 0;
-    color: #a92778;
+    color: #e87516;
     font-size: 10pt;
     font-weight: bold;
     text-decoration: none;
 }
 
-body:has(.profile) main > a:hover {
+body.drew-page:has(.profile) main > a:hover {
     text-decoration: underline;
 }
 
-/* SMALLER SCREENS */
+/* RESPONSIVE */
 @media screen and (max-width: 900px) {
-    body:has(.profile) header,
-    body:has(.profile) main {
+    body.drew-page:has(.profile) header,
+    body.drew-page:has(.profile) main {
         width: 100%;
         height: auto;
     }
 
-    body:has(.profile) main {
-        min-height: 100vh;
-        overflow: visible;
-        padding: 20px;
-    }
-
-    body:has(.profile) header {
+    body.drew-page:has(.profile) header {
         padding: 15px;
     }
 
-    body:has(.profile) .hobbies {
+    body.drew-page:has(.profile) main {
+        min-height: 100vh;
+        padding: 20px;
+        overflow: visible;
+    }
+
+    body.drew-page:has(.profile) .hobbies {
         gap: 12px;
     }
 
-    body:has(.profile) .hobby {
+    body.drew-page:has(.profile) .hobby {
         width: 100%;
     }
 
-    body:has(.profile) .hobby img {
+    body.drew-page:has(.profile) .hobby img {
         height: 100px;
     }
 }
 
+/* PRINT */
+@media print {
+    body.drew-page {
+        margin: 0;
+        print-color-adjust: exact;
+        -webkit-print-color-adjust: exact;
+    }
+
+    body.drew-page:has(.profile) header,
+    body.drew-page:has(.profile) main {
+        margin: 0;
+        box-shadow: none;
+    }
+}
+
+
+/* ABI PROFILE FIX — keep all 3 hobbies in one row */
+
+body.abi-page main {
+    height: 180mm;
+    overflow: hidden;
+}
+
+body.abi-page .profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+body.abi-page .hobbies {
+    display: grid !important;
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+    column-gap: 8mm;
+    row-gap: 3mm;
+    margin: 4mm 0 0;
+    align-items: start;
+}
+
+body.abi-page .hobbies > h2 {
+    grid-column: 1 / -1 !important;
+    justify-self: center;
+    margin: 0 0 2mm;
+}
+
+body.abi-page .hobbies > .hobby {
+    width: 55mm;
+    max-width: 100%;
+    justify-self: center;
+    align-self: start;
+    margin: 0;
+}
+
+body.abi-page .hobby img {
+    height: 30mm;
+    object-fit: contain;
+}
+
+body.abi-page main > a {
+    margin-top: 3mm;
+}
+
+/* Keep the layout responsive on smaller screens */
+@media screen and (max-width: 900px) {
+    body.abi-page header,
+    body.abi-page main {
+        width: 100%;
+        height: auto;
+    }
+
+    body.abi-page main {
+        min-height: 100vh;
+        overflow: visible;
+    }
+
+    body.abi-page .hobbies {
+        grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+        gap: 12px;
+    }
+
+    body.abi-page .hobbies > .hobby {
+        width: 100%;
+    }
+
+    body.abi-page .hobby img {
+        height: 100px;
+    }
+}
+
+/* CHRISTIAN PROFILE — SAME LAYOUT AS ABI */
+
+body.christian-page {
+    margin: 0;
+    padding: 0;
+    background: #d8e6ff;
+    color: #253c68;
+    font-family: "Trebuchet MS", Arial, sans-serif;
+}
+
+/* HEADER */
+body.christian-page header {
+    box-sizing: border-box;
+    width: 297mm;
+    height: 30mm;
+    margin: 0 auto;
+    padding: 4mm 12mm;
+    background: #cdeee8;
+    border: 8px dotted #83a8f5;
+    border-bottom: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+body.christian-page header h1 {
+    margin: 0;
+    color: #356ad2;
+    font-size: 25pt;
+    text-shadow: 2px 2px #ffffff;
+}
+
+/* MAIN */
+body.christian-page main {
+    box-sizing: border-box;
+    width: 297mm;
+    height: 180mm;
+    margin: 0 auto;
+    padding: 5mm 12mm;
+    background: #f5f8ff;
+    border-left: 8px dotted #83a8f5;
+    border-right: 8px dotted #83a8f5;
+    border-bottom: 8px dotted #83a8f5;
+    text-align: center;
+    overflow: hidden;
+}
+
+/* PROFILE */
+body.christian-page .profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+body.christian-page .profile > img {
+    display: block;
+    width: 40mm;
+    height: 45mm;
+    object-fit: cover;
+    object-position: center;
+    background: #ffffff;
+    border: 4px solid #ffffff;
+    outline: 2px solid #83a8f5;
+    border-radius: 10px;
+    padding: 2px;
+    box-sizing: border-box;
+    margin: 0 auto 2mm;
+}
+
+body.christian-page .profile h2 {
+    margin: 2mm 0;
+    color: #356ad2;
+    font-size: 17pt;
+}
+
+body.christian-page .profile p {
+    margin: 1mm 0;
+    font-size: 10pt;
+    line-height: 1.3;
+    color: #253c68;
+}
+
+/* HOBBIES */
+body.christian-page .hobbies {
+    display: grid !important;
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+    column-gap: 8mm;
+    row-gap: 3mm;
+    margin: 4mm 0 0;
+    align-items: start;
+}
+
+body.christian-page .hobbies > h2 {
+    grid-column: 1 / -1;
+    justify-self: center;
+    margin: 0 0 2mm;
+    color: #356ad2;
+    font-size: 18pt;
+}
+
+body.christian-page .hobbies > .hobby {
+    width: 55mm;
+    max-width: 100%;
+    justify-self: center;
+    align-self: start;
+    margin: 0;
+    padding: 3mm;
+    background: #e4edff;
+    border: 3px dotted #83a8f5;
+    border-radius: 10px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+body.christian-page .hobby img {
+    display: block;
+    width: 100%;
+    height: 30mm;
+    object-fit: contain;
+    background: #ffffff;
+    border: 2px solid #83a8f5;
+    padding: 2px;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+body.christian-page .hobby p {
+    margin: 2mm 0 0;
+    color: #253c68;
+    font-size: 9pt;
+    overflow-wrap: anywhere;
+}
+
+/* BACK LINK */
+body.christian-page main > a {
+    display: inline-block;
+    margin: 3mm 0 0;
+    color: #356ad2;
+    font-size: 10pt;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+body.christian-page main > a:hover {
+    text-decoration: underline;
+}
+
+/* RESPONSIVE */
+@media screen and (max-width: 900px) {
+    body.christian-page header,
+    body.christian-page main {
+        width: 100%;
+        height: auto;
+    }
+
+    body.christian-page header {
+        padding: 15px;
+    }
+
+    body.christian-page main {
+        min-height: 100vh;
+        padding: 20px;
+        overflow: visible;
+    }
+
+    body.christian-page .hobbies {
+        grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+        gap: 12px;
+    }
+
+    body.christian-page .hobbies > .hobby {
+        width: 100%;
+    }
+
+    body.christian-page .hobby img {
+        height: 100px;
+    }
+}
+
+/* PRINT */
+@media print {
+    body.christian-page {
+        print-color-adjust: exact;
+        -webkit-print-color-adjust: exact;
+    }
+
+    body.christian-page header,
+    body.christian-page main {
+        margin: 0;
+        box-shadow: none;
+    }
+}
