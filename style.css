@@ -642,3 +642,11 @@ body:has(.profile) main > a:hover {
         box-shadow: none;
     }
 }
+angel's page 
+
+body:has(.profile) {
+    margin: 0;
+    padding: 0;
+    background: #a8c5e1;
+    color: #8bdeff;
+    font-family: "Trebuchet MS", Arial, sans-serif;
